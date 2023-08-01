@@ -1,4 +1,4 @@
-name: Sort Data
+name: Check and sort CSV
 
 on:
   pull_request:
@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: Sort CSV
         run: |
