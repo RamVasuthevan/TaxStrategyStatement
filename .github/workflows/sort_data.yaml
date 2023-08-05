@@ -18,4 +18,4 @@ jobs:
       - name: Run Sorting Script
         run: |
           chmod +x .github/workflows/sort_csv.sh
-          .github/workflows/sort_csv.sh
+          .github/workflows/sort_csv.sh 'website/_data/tax_strategy_statement.csv'
