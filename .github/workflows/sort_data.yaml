@@ -12,7 +12,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.ModernSlaveryStatements_GitHub_Actions }}
+          token: ${{ secrets.TaxStrategyStatement_GitHub_Actions }}
           ref: ${{ github.head_ref }}
 
       - name: Sort CSV
