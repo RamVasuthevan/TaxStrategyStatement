@@ -17,5 +17,5 @@ jobs:
 
       - name: Run Sorting Script
         run: |
-          chmod +x ./scripts/sort_csv.sh
-          ./scripts/sort_csv.sh
+          chmod +x sort_csv.sh
+          sort_csv.sh
