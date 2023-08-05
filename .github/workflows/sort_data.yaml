@@ -17,7 +17,7 @@ jobs:
 
       - name: Sort CSV
         run: |
-          FILENAME='website/_data/modern_slavery_statements.csv'
+          FILENAME='website/_data/tax_strategy_statement.csv'
           SORTED_FILENAME='temp_sorted.csv'
 
           # Extract header
