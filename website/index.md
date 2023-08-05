@@ -29,6 +29,3 @@ Sample Statements:
   </tbody>
 </table>
 
-Read more:
-- [UK Modern Slavery Statements](https://modern-slavery-statement-registry.service.gov.uk/)
-
