@@ -1,3 +1,3 @@
-# Modern Slavery Statements
+# Tax Strategy Statement
 
-Small website explaining modern slavery statements with some examples
+Small website explaining tax strategy statements with some examples

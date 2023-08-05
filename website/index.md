@@ -2,9 +2,13 @@
 layout: default
 ---
 
-# Modern Slavery Statements
+# Tax Strategy Statement
 
-The UK Modern Slavery Act (2015) and Australia's Modern Slavery Act (2018) require large businesses to issue modern slavery statements, annually reporting on actions taken to mitigate the risk of modern slavery within their operations and supply chains, fostering transparency and accountability.
+[Schedule 19 to the Finance Act 2016](https://www.legislation.gov.uk/ukpga/2016/24/schedule/19) in the United Kingdom requires large corporations (turnover above £200 million or balance sheet over £2 billion) to publish [tax strategy statements](https://www.gov.uk/guidance/large-businesses-publish-your-tax-strategy) explaining the company's:
+- approach to risk management and governance arrangements in relation to UK taxation
+- attitude towards tax planning (so far as affecting UK taxation),
+- acceptable level of risk in relation to UK taxation
+- approach towards its dealings with HMRC.
 
 Sample Statements:
 
@@ -13,15 +17,13 @@ Sample Statements:
     <tr>
       <th>Company Name</th>
       <th>Statement</th>
-      <th>Additional Information</th>
     </tr>
   </thead>
   <tbody>
-    {% for row in site.data.modern_slavery_statements%}
+    {% for row in site.data.tax_strategy_statement%}
       <tr>
         <td>{{ row["Company Name"] }}</td>
         <td><a href="{{ row["Statement URL"] }}">{{ row["Statement Name"] }}</a></td>
-        <td><a href="{{ row["Additional Information URL"] }}">{{ row["Additional Information Text"] }}</a></td>
       </tr>
     {% endfor %}
   </tbody>
@@ -29,7 +31,4 @@ Sample Statements:
 
 Read more:
 - [UK Modern Slavery Statements](https://modern-slavery-statement-registry.service.gov.uk/)
-- [Australia Online Register for Modern Slavery Statements](https://modernslaveryregister.gov.au/)
-- [Business & Human Rights Resource Centre: Modern Slavery Registry](https://www.business-humanrights.org/en/from-us/modern-slavery-statements/)
-
 

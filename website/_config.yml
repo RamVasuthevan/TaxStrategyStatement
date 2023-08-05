@@ -1,9 +1,9 @@
 # Site settings
-title: Modern Slavery Statements
-tag_text: modern slavery statements
-description: Biscuit is a single-page responsive Jekyll theme. This is the most simple and still-good-looking Jekyll theme that you can find.
+title: Tax Strategy Statement
+tag_text: Tax Strategy Statement
+description: ""
 baseurl: ""
-url: "https://modernslaverystatements.com"
+url: "http://taxstrategystatement.com/"
 
 plugins:
   - jekyll-seo-tag
