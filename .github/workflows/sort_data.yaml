@@ -17,5 +17,5 @@ jobs:
 
       - name: Run Sorting Script
         run: |
-          chmod +x sort_csv.sh
-          sort_csv.sh
+          chmod +x .github/workflows/sort_csv.sh
+          .github/workflows/sort_csv.sh
