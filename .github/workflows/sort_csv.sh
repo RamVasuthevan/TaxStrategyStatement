@@ -8,7 +8,10 @@ HEADER=$(head -n 1 $FILENAME)
 # Extract content and sort it
 tail -n +2 $FILENAME | sort > $SORTED_FILENAME
 # Add header back
-echo "$HEADER" | cat - $SORTED_FILENAME > temp && mv temp $SORTED_FILENAME
+{
+  echo "$HEADER"
+  cat $SORTED_FILENAME
+} > temp && mv temp $SORTED_FILENAME
 
 # Check if sorted file is different from original
 if ! cmp --silent $FILENAME $SORTED_FILENAME; then
