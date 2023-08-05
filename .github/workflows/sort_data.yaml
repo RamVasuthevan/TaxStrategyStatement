@@ -12,12 +12,12 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.ModernSlaveryStatements_GitHub_Actions }}
+          token: ${{ secrets.TaxStrategyStatement_GitHub_Actions }}
           ref: ${{ github.head_ref }}
 
       - name: Sort CSV
         run: |
-          FILENAME='website/_data/modern_slavery_statements.csv'
+          FILENAME='website/_data/tax_strategy_statement.csv'
           SORTED_FILENAME='temp_sorted.csv'
 
           # Extract header
