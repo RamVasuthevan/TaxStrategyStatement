@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILENAME='website/_data/tax_strategy_statement.csv'
+FILENAME=$1
 SORTED_FILENAME='temp_sorted.csv'
 
 # Extract header
