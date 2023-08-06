@@ -7,6 +7,7 @@ url: "http://taxstrategystatement.com/"
 
 plugins:
   - jekyll-seo-tag
+  - gem "jekyll-sitemap", "~> 1.4"
 
 # Build settings
 markdown: kramdown
