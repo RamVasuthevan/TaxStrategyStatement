@@ -65,7 +65,7 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  x86_64-linux
+  x86_64-linux-gnu
 
 DEPENDENCIES
   jekyll (~> 4.3.2)
@@ -73,4 +73,4 @@ DEPENDENCIES
   jekyll-sitemap (~> 1.4)
 
 BUNDLED WITH
-   2.4.17
+   2.5.6
