@@ -12,7 +12,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.TaxStrategyStatement_GitHub_Actions }}
           ref: ${{ github.head_ref }}
 
       - name: Run Sorting Script
