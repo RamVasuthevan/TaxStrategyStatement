@@ -1,6 +1,6 @@
-const { parse } = require("csv-parse/sync");
+import { parse } from "csv-parse/sync";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // Add CSV data format support
   eleventyConfig.addDataExtension("csv", (contents) => {
     const records = parse(contents, {
@@ -18,4 +18,4 @@ module.exports = function (eleventyConfig) {
       output: "_site", // Output folder
     },
   };
-};
+}
