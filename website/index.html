@@ -1,0 +1,46 @@
+---
+title: Tax Strategy Statement
+layout: default.njk
+---
+
+<h1>Tax Strategy Statement</h1>
+
+<p>
+  <a href="https://www.legislation.gov.uk/ukpga/2016/24/schedule/19">Schedule 19 to the Finance Act 2016</a>
+  in the United Kingdom requires large corporations (turnover above £200 million or balance sheet over £2 billion) to publish
+  <a href="https://www.gov.uk/guidance/large-businesses-publish-your-tax-strategy">tax strategy statements</a> explaining the company's:
+</p>
+<ul>
+  <li>Approach to risk management and governance arrangements in relation to UK taxation</li>
+  <li>Attitude towards tax planning (so far as affecting UK taxation)</li>
+  <li>Acceptable level of risk in relation to UK taxation</li>
+  <li>Approach towards its dealings with HMRC</li>
+</ul>
+
+<h2>Sample Statements</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company Name</th>
+      <th>Statement</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in tax_strategy_statement %}
+    <tr>
+      <td>{{ row["Company Name"] }}</td>
+      <td><a href="{{ row["Statement URL"] }}">{{ row["Statement Name"] }}</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2>Read More</h2>
+<ul>
+  <li>
+    <a href="https://www.ato.gov.au/business/large-business/corporate-tax-transparency/voluntary-tax-transparency-code/">
+      Voluntary Tax Transparency Code — Australian Taxation Office
+    </a>
+  </li>
+</ul>
