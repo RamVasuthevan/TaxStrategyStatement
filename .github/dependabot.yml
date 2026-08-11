@@ -4,7 +4,14 @@ updates:
     directory: "/website"
     schedule:
       interval: "quarterly"
+    groups:
+      npm-minor-patch:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "quarterly"
+    groups:
+      actions:
+        patterns: ["*"]
