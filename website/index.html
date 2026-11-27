@@ -30,7 +30,7 @@ layout: default.njk
     {% for row in tax_strategy_statement %}
     <tr>
       <td>{{ row["Company Name"] }}</td>
-      <td><a href="{{ row["Statement URL"] }}">{{ row["Statement Name"] }}</a></td>
+      <td><a href="{{ row["Statement URL"] }}" target="_blank" rel="noopener noreferrer">{{ row["Statement Name"] }}</a></td>
     </tr>
     {% endfor %}
   </tbody>
